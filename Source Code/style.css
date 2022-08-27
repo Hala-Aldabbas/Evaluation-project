@@ -1,0 +1,354 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+/* nav bar */
+.navbar{
+position: absolute;
+	top: 0;
+	padding:25px 0;
+  z-index: 9999;
+}
+.navbar .logo{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+.navbar ul.nav{
+	margin-right: 15%;
+}
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover{
+	background:rgba(17,68,155,0.5);
+	color: white;
+  margin-left: 10px;
+  
+
+}
+.navbar ul.nav li a{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: white;
+  
+}
+
+
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('img/professianal.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: cover;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url('img/technicall.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+	background: url('img/personal1.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.login-form .logo {
+  width: 50%;
+  display: block;
+}
+.login-form {
+  position: relative;
+  
+  background: rgb(17,68,155);
+background: linear-gradient(90deg, rgba(17,68,155,1) 0%, rgba(67,113,195,1) 55%, rgba(98,142,220,1) 100%);
+  padding: 40px;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+  height: 700px;
+
+}
+.login-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 70px;
+  
+}
+
+.login-form img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.login-form h2 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 5px;
+  font-weight: 500px;
+  color: #272346;
+  text-align: center;
+}
+
+.login-form .main {
+  position: relative;
+  display: flex;
+  margin: 30px 0;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+}
+.login-form .content {
+  flex-basis: 50%;
+  padding: 3em 3em;
+  background: #fff;
+  box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.form-img {
+  flex-basis: 50%;
+  background: #ffffff;
+  background-size: cover;
+  padding: 40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  align-items: center;
+  display: grid;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+}
+.form-img img {
+  max-width: 100%;
+}
+
+.account {
+  color: #666;
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 0.5;
+  text-align: center;
+}
+.btn,
+button,
+input {
+  border-radius: 35px;
+}
+
+.btn:hover,
+button:hover {
+  transition: 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-form form {
+  margin: 30px 0;
+}
+
+.login-form input {
+  outline: none;
+  margin-bottom: 10px;
+  font-stretch: 19px;
+  color: #999;
+  text-align: left;
+  padding: 14px 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  background: #f7fafc;
+  transition: 0.3s ease;
+}
+
+.login-form input:focus {
+  background: transparent;
+  border: 1px solid #0568c1;
+}
+button.btn {
+  margin: 25px 0;
+}
+.login-form button {
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  background: #0568c1;
+  border: none;
+  padding: 14px 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #272346;
+
+  color: #fff;
+}
+
+p.acount,
+p.account a {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+  font-size: 16px;
+  color: rgb(215, 212, 212);
+}
+p.account a {
+  color: #0568c1;
+}
+
+p.account a:hover {
+  text-decoration: underline;
+}
+/* footer */
+.footer-copyright {
+  background-color: black;
+  color: #fff;
+  padding: 15px 30px;
+text-align: center;
+}
+
+.footer-copyright-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.footer-copyright-text {
+color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.footer-copyright-link {
+  color: #fff;
+  text-decoration: none;
+}
+.red {
+  color: rgb(158, 16, 16);
+}
+
+/**Responsive sign in */
+
+@media (max-width: 746px) {
+  .login-form .content {
+        flex-basis: 60%;
+        padding: 4em 4em;
+        background: #fff;
+        box-shadow: 2px 9px 49px -17px rgb(0 0 0 / 10%);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+  }
+  .login-form .main {
+        flex-direction: column;
+  }
+  .login-form .main {
+        position: relative;
+        display: flex;
+        margin: 48px -38px;
+        box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  }
+  .login-form form {
+        margin-top: 30px;
+        margin-bottom: 10px;
+  }
+  .form-img {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+  }
+  .content {
+        order: 1;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+  }
+ 
+  button.btn {
+        margin: 25px 0;
+  }
+  .form-img {
+        flex-basis: 50%;
+        background: #ffffff;
+        background-size: cover;
+        padding: 40px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        align-items: center;
+        display: none;
+        box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  }
+  .account {
+        color: #666;
+        font-size: 16px;
+        line-height: 19px;
+        opacity: 0.5;
+        text-align: center;
+  }
+}

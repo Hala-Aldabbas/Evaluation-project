@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="staly_saign_up.css">
+    <!-- bootstrap icons cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>SignUp</title>
+</head>
+<body>
+      <header>
+      <div class="nav">
+            <a >PerformYard</a>
+            <a class="active" href="index.html">Home</a>
+          </div>
+      </header>
+<div class="Signup-form">
+    <div class="container">
+          <div class="main">
+                <div class="content">
+                      <h2>Sign up</h2>
+
+                      <form action="index.html#LogIn" method="POST" onsubmit="return validation()"  style="margin-top: 2.5em" novalidate>
+                        <input type="text" id="Username" name="name" placeholder="First and last name" required autofocus="">
+
+                        <div id="name_err" style="color: red"></div>
+
+                            <input type="email" id="email" name="email" placeholder="Email" required autofocus="">
+
+                            <div id="email_err" style="color: red"></div>
+
+                            <input type="password" id="password" name="password" placeholder="password" required autofocus="">
+
+                            <div id="pass_err" style="color: red"></div>
+
+                            <!-- <p id="passwordmessage"> the passowrd must be from 3 to  15 characters  </p> -->
+                            <button class="btn" name="submit" type="submit" >Sign up</button>
+                      </form>
+                      <p class="account"> Already have an account?<a href="index.html">sign in</a></p>
+
+                </div>
+                <div class="form-img">
+                      <img src="img/sign_up.jpge.webp" alt="">
+                </div>
+          </div>
+    </div>
+</div>
+<footer>
+<div class="footer-copyright">
+      <div class="footer-copyright-wrapper">
+        <p class="footer-copyright-text">
+          <a class="footer-copyright-link" href="index.html" target="_self"> ©2022. | PerfomYard | All rights reserved.</a>
+          <p>Made with love <i class="bi bi-heart-fill red"></i> <br>
+  
+  
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script>
+      
+function validation() {
+  var name = document.getElementById("Username").value;
+  var email = document.getElementById("email").value;
+  var pass = document.getElementById("password").value;
+  var Regexname = /^[A-Za-z]{3,20}/;
+  var Regexemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var Regexpass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
+  var errorNum = 0;
+
+  if (Regexname.test(name)) {
+    document.getElementById("name_err").innerHTML = "";
+  } else {
+    document.getElementById("name_err").innerHTML =
+      "Please Enter a valid  name";
+    errorNum++;
+  }
+  if (Regexemail.test(email)) {
+    document.getElementById("email_err").innerHTML = "";
+  } else {
+    document.getElementById("email_err").innerHTML =
+      "Please Enter a valid email";
+      errorNum++;
+  }
+
+  if (Regexpass.test(pass)) {
+    document.getElementById("pass_err").innerHTML = "";
+  } else {
+    document.getElementById("pass_err").innerHTML =
+      "Please Enter a valid password";
+      errorNum++;
+  }
+
+  if (errorNum > 0 ) {
+      return false;
+  }
+
+  if ( Regexname.test(name)&&Regexemail.test(email)&&Regexpass.test(pass)){
+    let formData = JSON.parse(localStorage.getItem('formData')) || [];
+    formData.push({mail: email,pass: pass,name:name});
+    localStorage.setItem('formData', JSON.stringify(formData));
+    alert("Your account has been created");
+  }}
+  </script>
+</body>
+</html>

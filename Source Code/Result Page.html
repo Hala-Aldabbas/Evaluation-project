@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ٌُResult Page</title>
+    <link rel="stylesheet" href="./style_Result Page.css">
+    <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html" onclick="clearUserSession(event)">PerfomYard</a>
+        <a href="Evaluation Page.html">Evaluation Page</a>
+        <a href="index.html#LogIn" class="split" onclick="clearUserSession(event)">LogOut</a>
+      </div>
+
+
+
+
+ 
+
+      <section class="container-result">
+        <h2>Evaluation Result</h2>
+        <div class="evaluation-box">
+            <div class="column-headers">
+                <div class="bold-head"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAAJ0lEQVRIiWNgGKTgP6kamGjhilFLRi0ZtWTUklFLRi0ZtWTUkqEFAB4tASyD4bGwAAAAAElFTkSuQmCC"><b style="color: black; font-size:larger;"> Name </b> </div>
+                <div class="bold-head"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAAJ0lEQVRIiWNgGKTgP6kamGjhilFLRi0ZtWTUklFLRi0ZtWTUkqEFAB4tASyD4bGwAAAAAElFTkSuQmCC"><b style="color: black; font-size:larger;">Id Number</b>  </div>
+                <div class="bold-head"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAAJ0lEQVRIiWNgGKTgP6kamGjhilFLRi0ZtWTUklFLRi0ZtWTUkqEFAB4tASyD4bGwAAAAAElFTkSuQmCC"> <b style="color: black; font-size:larger;">Department </b></div>
+                <div class="bold-head"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAAJ0lEQVRIiWNgGKTgP6kamGjhilFLRi0ZtWTUklFLRi0ZtWTUkqEFAB4tASyD4bGwAAAAAElFTkSuQmCC"><b style="color: black; font-size:larger;"> Evaluated by</b> </div>
+                <div class="bold-head"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAAJ0lEQVRIiWNgGKTgP6kamGjhilFLRi0ZtWTUklFLRi0ZtWTUkqEFAB4tASyD4bGwAAAAAElFTkSuQmCC"><b style="color: black; font-size:larger;"> Result</b></div>
+            </div>
+
+            <div class="evaluation-row">
+                <div class="employee-info">
+                    <div>Steven King</b></div>
+                    <div >00001</div>
+                    <div >Engineering Department</div>
+                    <div > Hala Aldabbas</div>
+                    <button class="result " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="resultForm(event)">  Result</button>
+                    <br>
+                 </div>                    
+               
+                  <div class="employee-info">
+                  <div>Julia Markle </div>
+                  <div>00002</div>
+                  <div>IT Department</div>
+                  <div> AlQassem Oweida</div>
+                   <button class="result "type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample" onclick="resultForm2(event)">Result</button>
+                 <br>
+                </div>                    
+
+                <div class="employee-info">
+                <div> John Russell</div>
+                <div>00003</div>
+                 <div>IT Department</div>
+                <div> Abdulla Nsour</div>
+                 <button class="result "type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" onclick="resultForm3(event)">Result</button>
+                <br>
+                </div>                    
+
+                <div class="employee-info">
+                  <div>Peter Tucker  </div>
+                  <div>00004</div>
+                  <div>Human Resources Department</div>
+                  <div> Majd Atyyat</div>
+                  <button class="result "type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample" onclick="resultForm4(event)">Result</button>
+                  <br>
+                 </div>                    
+
+                 <div class="employee-info">
+                  <div> Eleni Rose</div>
+                 <div>00005</div>
+                 <div>Engineering Department</div>
+                 <div> Doaa Obeidat</div>
+                 <button class="result "type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample" onclick="resultForm5(event)">Result</button>
+                  <br>
+                   </div>                    
+      </section>
+<br>
+
+
+<!-- the first result for first employee  -->
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body" >
+          <h4 data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">The evaluation Result for <b style="color:black ;">Steven King</b></h4>
+          <!-- Personal Skills question -->
+          <hr><h5>Personal Skills</h5><hr>
+          <div class="checkbox-inline">
+            <div  for="attitude">Attitude </div>
+            <div id="res1">     </div>
+            <div id="poorMassage" > </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for=" initiative"> Initiative </div>
+            <div id="res2" ></div>
+            <div id="poorMassage2">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="Relationship with coworkers"> Relationship with coworkers</div>
+            <div id="res3" ></div>
+            <div id="poorMassage3">   </div>
+          </div>
+         <!-- professional Skills question --> 
+         <hr><h5>Professional Skills</h5><hr>
+         <div class="checkbox-inline">
+          <div  for="work Quality">Work Quality </div>
+          <div id="res4" style="margin-left:-100px ;"></div>
+          <div id="poorMassage4">   </div>
+        </div>
+        <div class="checkbox-inline">
+          <div  for="productivity">Productivity </div>
+          <div id="res5" style="margin-left:-100px ;"></div>
+          <div id="poorMassage5">   </div>
+        </div>
+        <div class="checkbox-inline">
+          <div  for="communication skills">communication skills</div>
+          <div id="res6" style="margin-left:-100px ;"></div>
+          <div id="poorMassage6">   </div>
+        </div>
+          <!--technical Skills question --> 
+          <hr><h5>Technical Skills</h5><hr>
+          <div class="checkbox-inline">
+            <div  for="knowlage of Coding Languages">knowlage of Coding Languages </div>
+            <div id="res7" style="margin-left:-100px ;"></div>
+            <div id="poorMassage7">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="problem solver">Problem solver </div>
+            <div id="res8" style="margin-left:-100px ;"></div>
+            <div id="poorMassage8">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="search skills">Search skills</div>
+            <div id="res9" style="margin-left:-100px ;"></div>
+            <div id="poorMassage9">   </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- the first result for second employee  -->
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body" >
+          <h4 data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">The evaluation Result for <b style="color:black ;">Julia Markle</b></h4>
+          <!-- Personal Skills question -->
+          <hr><h5>Personal Skills</h5><hr>
+          <div class="checkbox-inline">
+            <div  for="attitude">Attitude </div>
+            <div id="res-emp2-1">     </div>
+            <div id="poorMassage-emp2-1" > </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for=" initiative"> Initiative </div>
+            <div id="res-emp2-2" ></div>
+            <div id="poorMassage-emp2-2">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="Relationship with coworkers"> Relationship with coworkers</div>
+            <div id="res-emp2-3" ></div>
+            <div id="poorMassage-emp2-3">   </div>
+          </div>
+         <!-- professional Skills question --> 
+         <hr><h5>Professional Skills</h5><hr>
+         <div class="checkbox-inline">
+          <div  for="work Quality">Work Quality </div>
+          <div id="res-emp2-4" style="margin-left:-100px ;"></div>
+          <div id="poorMassage-emp2-4">   </div>
+        </div>
+        <div class="checkbox-inline">
+          <div  for="productivity">Productivity </div>
+          <div id="res-emp2-5" style="margin-left:-100px ;"></div>
+          <div id="poorMassage-emp2-5">   </div>
+        </div>
+        <div class="checkbox-inline">
+          <div  for="communication skills">communication skills</div>
+          <div id="res-emp2-6" style="margin-left:-100px ;"></div>
+          <div id="poorMassage-emp2-6">   </div>
+        </div>
+          <!--technical Skills question --> 
+          <hr><h5>Technical Skills</h5><hr>
+          <div class="checkbox-inline">
+            <div  for="knowlage of Coding Languages">knowlage of Coding Languages </div>
+            <div id="res-emp2-7" style="margin-left:-100px ;"></div>
+            <div id="poorMassage-emp2-7">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="problem solver">Problem solver </div>
+            <div id="res-emp2-8" style="margin-left:-100px ;"></div>
+            <div id="poorMassage-emp2-8">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="search skills">Search skills</div>
+            <div id="res-emp2-9" style="margin-left:-100px ;"></div>
+            <div id="poorMassage-emp2-9">   </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- the first result for third employee  -->
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body" >
+              <h4 data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">The evaluation Result for <b style="color:black ;">John Russell</b></h4>
+              <!-- Personal Skills question -->
+              <hr><h5>Personal Skills</h5><hr>
+              <div class="checkbox-inline">
+                <div  for="attitude">Attitude </div>
+                <div id="res-emp3-1">     </div>
+                <div id="poorMassage-emp3-1" > </div>
+              </div>
+              <div class="checkbox-inline">
+                <div  for=" initiative"> Initiative </div>
+                <div id="res-emp3-2" ></div>
+                <div id="poorMassage-emp3-2">   </div>
+              </div>
+              <div class="checkbox-inline">
+                <div  for="Relationship with coworkers"> Relationship with coworkers</div>
+                <div id="res-emp3-3" ></div>
+                <div id="poorMassage-emp3-3">   </div>
+              </div>
+             <!-- professional Skills question --> 
+             <hr><h5>Professional Skills</h5><hr>
+             <div class="checkbox-inline">
+              <div  for="work Quality">Work Quality </div>
+              <div id="res-emp3-4" style="margin-left:-100px ;"></div>
+              <div id="poorMassage-emp3-4">   </div>
+            </div>
+            <div class="checkbox-inline">
+              <div  for="productivity">Productivity </div>
+              <div id="res-emp3-5" style="margin-left:-100px ;"></div>
+              <div id="poorMassage-emp3-5">   </div>
+            </div>
+            <div class="checkbox-inline">
+              <div  for="communication skills">communication skills</div>
+              <div id="res-emp3-6" style="margin-left:-100px ;"></div>
+              <div id="poorMassage-emp3-6">   </div>
+            </div>
+              <!--technical Skills question --> 
+              <hr><h5>Technical Skills</h5><hr>
+              <div class="checkbox-inline">
+                <div  for="knowlage of Coding Languages">knowlage of Coding Languages </div>
+                <div id="res-emp3-7" style="margin-left:-100px ;"></div>
+                <div id="poorMassage-emp3-7">   </div>
+              </div>
+              <div class="checkbox-inline">
+                <div  for="problem solver">Problem solver </div>
+                <div id="res-emp3-8" style="margin-left:-100px ;"></div>
+                <div id="poorMassage-emp3-8">   </div>
+              </div>
+              <div class="checkbox-inline">
+                <div  for="search skills">Search skills</div>
+                <div id="res-emp3-9" style="margin-left:-100px ;"></div>
+                <div id="poorMassage-emp3-9">   </div>
+              </div>
+            </div>
+          </div>
+
+                    <!-- the first result for fourth employee  -->
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body" >
+          <h4 data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">The evaluation Result for <b style="color:black ;">Peter Tucker</b></h4>
+          <!-- Personal Skills question -->
+          <hr><h5>Personal Skills</h5><hr>
+          <div class="checkbox-inline">
+            <div  for="attitude">Attitude </div>
+            <div id="res-emp4-1">     </div>
+            <div id="poorMassage-emp4-1" > </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for=" initiative"> Initiative </div>
+            <div id="res-emp4-2" ></div>
+            <div id="poorMassage-emp4-2">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="Relationship with coworkers"> Relationship with coworkers</div>
+            <div id="res-emp4-3" ></div>
+            <div id="poorMassage-emp4-3">   </div>
+          </div>
+         <!-- professional Skills question --> 
+         <hr><h5>Professional Skills</h5><hr>
+         <div class="checkbox-inline">
+          <div  for="work Quality">Work Quality </div>
+          <div id="res-emp4-4" style="margin-left:-100px ;"></div>
+          <div id="poorMassage-emp4-4">   </div>
+        </div>
+        <div class="checkbox-inline">
+          <div  for="productivity">Productivity </div>
+          <div id="res-emp4-5" style="margin-left:-100px ;"></div>
+          <div id="poorMassage-emp4-5">   </div>
+        </div>
+        <div class="checkbox-inline">
+          <div  for="communication skills">communication skills</div>
+          <div id="res-emp4-6" style="margin-left:-100px ;"></div>
+          <div id="poorMassage-emp4-6">   </div>
+        </div>
+          <!--technical Skills question --> 
+          <hr><h5>Technical Skills</h5><hr>
+          <div class="checkbox-inline">
+            <div  for="knowlage of Coding Languages">knowlage of Coding Languages </div>
+            <div id="res-emp4-7" style="margin-left:-100px ;"></div>
+            <div id="poorMassage-emp4-7">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="problem solver">Problem solver </div>
+            <div id="res-emp4-8" style="margin-left:-100px ;"></div>
+            <div id="poorMassage-emp4-8">   </div>
+          </div>
+          <div class="checkbox-inline">
+            <div  for="search skills">Search skills</div>
+            <div id="res-emp4-9" style="margin-left:-100px ;"></div>
+            <div id="poorMassage-emp4-9">   </div>
+          </div>
+        </div>
+      </div>
+
+                <!-- the first result for fifth employee  -->
+                <div class="collapse" id="collapseExample4">
+                  <div class="card card-body" >
+                    <h4  data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">The evaluation Result for <b style="color:black ; ">Eleni Rose</b></h4>
+                    <!-- Personal Skills question -->
+                    <hr><h5>Personal Skills</h5><hr>
+                    <div class="checkbox-inline">
+                      <div  for="attitude">Attitude </div>
+                      <div id="res-emp5-1">     </div>
+                      <div id="poorMassage-emp5-1" > </div>
+                    </div>
+                    <div class="checkbox-inline">
+                      <div  for=" initiative"> Initiative </div>
+                      <div id="res-emp5-2" ></div>
+                      <div id="poorMassage-emp5-2">   </div>
+                    </div>
+                    <div class="checkbox-inline">
+                      <div  for="Relationship with coworkers"> Relationship with coworkers</div>
+                      <div id="res-emp5-3" ></div>
+                      <div id="poorMassage-emp5-3">   </div>
+                    </div>
+                   <!-- professional Skills question --> 
+                   <hr><h5>Professional Skills</h5><hr>
+                   <div class="checkbox-inline">
+                    <div  for="work Quality">Work Quality </div>
+                    <div id="res-emp5-4" style="margin-left:-100px ;"></div>
+                    <div id="poorMassage-emp5-4">   </div>
+                  </div>
+                  <div class="checkbox-inline">
+                    <div  for="productivity">Productivity </div>
+                    <div id="res-emp5-5" style="margin-left:-100px ;"></div>
+                    <div id="poorMassage-emp5-5">   </div>
+                  </div>
+                  <div class="checkbox-inline">
+                    <div  for="communication skills">communication skills</div>
+                    <div id="res-emp5-6" style="margin-left:-100px ;"></div>
+                    <div id="poorMassage-emp5-6">   </div>
+                  </div>
+                    <!--technical Skills question --> 
+                    <hr><h5>Technical Skills</h5><hr>
+                    <div class="checkbox-inline">
+                      <div  for="knowlage of Coding Languages">knowlage of Coding Languages </div>
+                      <div id="res-emp5-7" style="margin-left:-100px ;"></div>
+                      <div id="poorMassage-emp5-7">   </div>
+                    </div>
+                    <div class="checkbox-inline">
+                      <div  for="problem solver">Problem solver </div>
+                      <div id="res-emp5-8" style="margin-left:-100px ;"></div>
+                      <div id="poorMassage-emp5-8">   </div>
+                    </div>
+                    <div class="checkbox-inline">
+                      <div  for="search skills">Search skills</div>
+                      <div id="res-emp5-9" style="margin-left:-100px ;"></div>
+                      <div id="poorMassage-emp5-9">   </div>
+                    </div>
+                  </div>
+                </div>
+
+                                    <footer>
+                                    <div class="footer-copyright">
+                                        <div class="footer-copyright-wrapper">
+                                          <p class="footer-copyright-text">
+                                            <a class="footer-copyright-link" href=" here will be the link for the landing page " target="_self"> ©2022. | PerfomYard | All rights reserved.</a>
+                                            <p>Made with love <i class="bi bi-heart-fill red"></i> <br>
+                                    
+                                    
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </footer>
+<script src="script_Result Page.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>

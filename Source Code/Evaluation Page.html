@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Evaluation</title>
+    <link rel="stylesheet" href="Style_Evaluation Page.css">
+    <!-- bootstrap icons cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+<!-- nav Bar Start -->
+    <div id="navBar">
+        <div class="topnav">
+            <a class="active" href="index.html" onclick="clearUserSession(event)">PerfomYard</a>
+            <a href="Result Page.html">Evaluation Result</a>
+            <a href="index.html#LogIn" class="split" onclick="clearUserSession(event)">LogOut</a>
+          </div>
+    </div>
+
+<h3 id="userBar">Welcome Mr. <span id="UserName">First Last</span></h3>
+
+<!-- nav Bar  End -->
+
+<!-- Select Start -->
+    <div id="Main">
+
+        <h2 id="namesLable">Employees : </h2>
+        <div id="EmployeList">
+            <!-- *********************************************** -->
+            <select name="" id="EmployeSelector" autofocus>
+                <option selected disabled  value="Selectxx">Select an Employee</option>
+                <option value="Steven King" id="sk">Steven King</option>
+                <option value="Julia Markle" id="jm">Julia Markle </option>
+                <option value="John Russell" id="jr">John Russell</option>
+                <option value="Peter Tucker" id="pt">Peter Tucker</option>
+                <option value="Eleni Rose" id="er">Eleni Rose</option>
+            </select>
+            <!-- *********************************************** -->
+        </div>
+<!-- Select End -->
+
+<!--Employe info Start -->
+        <div id="EmployeData">
+
+            <img id="userPic" src="./img/ux.png">
+
+            <div id="Em1">
+                <div class="info">
+                    <h3 class="info-title">Name : </h3>
+                    <h4 class="info-Data" id="Name-data">Employee Name</h4>
+                </div>
+                <div class="info">
+                    <h3 class="info-title">id # : </h3>
+                    <h3 class="info-Data" id="id-data">Employee id #</h3>
+                </div>
+                <div class="info">
+                    <h3 class="info-title">Department : </h3>
+                    <h4 class="info-Data" id="department-data">Employee Department</h4>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+
+<!--Employe info End -->
+
+<!--Start-Evaluation Section Start -->
+               <button id="Start-Evaluation">Click To Start The Evaluoation</button>
+
+        <!-- //********************************************************************************************************************************* -->
+        <div id="formSection">
+
+            <form id="MainForm" onsubmit="submitForm(event)">
+
+                <div id="personal-section">    <!--************** Evaluation section 1 **************-->
+                    <h2 class="Section-Name">Personal Evaluation-section </h2>
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee Attitude ?</h3> <!-- Question 1 -->
+                        <div class="Radio-All" id="Q1"> 
+                                  <label for="html"><input required type="radio" id="Q1R1" name="c1_1" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q1R2" name="c1_1" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q1R3" name="c1_1" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee initiative ?</h3><!-- Question 2 -->
+                        <div class="Radio-All">
+                                  <label for="html"><input required type="radio" id="Q2R1" name="c2-1" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q2R2" name="c2-1" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q2R3" name="c2-1" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee Relationship with coworkers ?</h3><!-- Question 3 -->
+                        <div class="Radio-All">
+                                  <label for="html"><input required type="radio" id="Q3R1" name="c3-1" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q3R2" name="c3-1" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q3R3" name="c3-1" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="professional-section">    <!--************** Evaluation section 2 **************-->
+
+                    <h2 class="Section-Name">Professional Evaluation-section </h2>
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee work Quality ?</h3><!-- Question 4 -->
+                        <div class="Radio-All">
+                                  <label for="html"><input required type="radio" id="Q4R1" name="c1-2" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q4R2" name="c1-2" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q4R3" name="c1-2" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee productivity ?</h3><!-- Question 5 -->
+                        <div class="Radio-All">
+                            
+                                  <label for="html"><input required type="radio" id="Q5R1" name="c2-2" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q5R2" name="c2-2" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q5R3" name="c2-2" value="Excellent"> Excellent</label>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee communication skills ?</h3><!-- Question 6 -->
+                        <div class="Radio-All">
+                                  <label for="html"><input required type="radio" id="Q6R1" name="c3-2" value="Poor"> Poor</label> 
+                                  <label for="html"><input type="radio" id="Q6R2" name="c3-2" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q6R3" name="c3-2" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="technical-section">   <!--************** Evaluation section 3 **************-->
+                    <h2 class="Section-Name">Technical Evaluation-section </h2>
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee knowlage of Coding Languages ?</h3><!-- Question 7 -->
+                        <div class="Radio-All">
+                                  <label for="html"><input required type="radio" id="Q7R1" name="c1-3" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q7R2" name="c1-3" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q7R3" name="c1-3" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee problem solving skills ?</h3><!-- Question 8 -->
+                        <div class="Radio-All">
+                                  <label for="html"><input required type="radio" id="Q8R1" name="c2-3" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q8R2" name="c2-3" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q8R3" name="c2-3" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="Qustion">How do you evaluate this employee communication skills ?</h3><!-- Question 9 -->
+                        <div class="Radio-All">
+                                  <label for="html"><input required type="radio" id="Q9R1" name="c3-3" value="Poor"> Poor</label>
+                                  <label for="html"><input type="radio" id="Q9R1" name="c3-3" value="Good"> Good</label>
+                                  <label for="html"><input type="radio" id="Q9R1" name="c3-3" value="Excellent"> Excellent</label>
+                        </div>
+                    </div>
+                </div>
+                <button id="Sub" type="submit">Submit</button>  <!--************** Submit Button **************-->
+                </div>
+            </form>
+        </div>
+        <!-- //********************************************************************************************************************************* -->
+    </div>
+
+<!--Start-Evaluation Section End -->
+
+<!-- Footer  Start-->
+    <div id="footer">
+    <footer>
+        <div class="footer-copyright">
+          <div class="footer-copyright-wrapper">
+            <p class="footer-copyright-text">
+              <a class="footer-copyright-link" href=" here will be the link for the landing page " target="_self"> ©2022. | PerfomYard | All rights reserved.</a>
+              <p>Made with love <i class="bi bi-heart-fill red"></i> <br>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+<!-- Footer  End-->
+
+<script src="Script_Evaluation Page.js"></script>
+
+</body>
+</html>
