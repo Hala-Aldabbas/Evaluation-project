@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    width: 100%;
+   }
+   
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:#00d3f8;
+    color: black;
+  }
+  
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .topnav a.split {
+    float: right;
+    background-color: #00d3f8;
+    color: white;
+  }
+.container-result{
+    margin: auto;
+    width: 90%;
+   margin-top: 3%;
+}
+
+.evaluation-box{
+    border: 2px solid #00d3f8;
+    padding: 20px 10px 0px;
+
+}
+  .column-headers ,.employee-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr; 
+
+  }
+  .evaluation-row{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    margin-top: 30px;
+  }
+  .employee-info{
+    padding-left:30px ;
+    margin-top: -20px;
+    
+  
+  }
+ .result{
+    width: 50%;
+    height: 30px;
+    border: 2px solid #00d3f8;
+    background-color: azure;
+  }
+  .collapse{
+    margin-top: 60px;
+    cursor: pointer;
+    width: 95%;
+  }
+  .card{
+     margin-left: 75px;
+  }
+  .checkbox-inline{
+    display: grid;
+    grid-template-columns: 1fr .5fr 3fr ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   gap: 10px;
+  }
+  hr{
+    height:5px;
+    background-color: #00d3f8;
+    border: none;
+  }
+  h4{
+    border: 1px solid none;
+    background-color:#00d3f8;
+    color: white;
+    padding: 20px;
+    
+  }
+
+  .footer-copyright {
+    background-color: black;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    margin-top: 240px;
+    
+  }
+  
+  .footer-copyright-wrapper {
+ overflow: hidden;
+    width: 90%;
+  }
+  
+  .footer-copyright-text {
+  color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .footer-copyright-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .red {
+    color: rgb(158, 16, 16);
+  
+  }
+
+  @media screen and (max-width: 820px) {
+    .column-headers ,.employee-info{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.2fr 1.1fr 1fr; 
+    }
+    .column-headers{
+      font-size: 14px;
+    
+    }
+    .employee-info{
+     margin-bottom: 15px;
+    }
+    .container-result{
+      margin: auto;
+      width: 90%;
+     margin-top: 3%;
+  }
+  
+  .evaluation-box{
+      border: 2px solid #00d3f8;
+      padding: 10px 10px 0px;
+  
+  }
+  .result{
+    width: 60%;
+    height: 40px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .collapse{
+    margin-top: 60px;
+    cursor: pointer;
+    width:95%;
+   
+  }
+  .card{
+     margin-left: 25px;
+  }
+  .checkbox-inline{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 3fr ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   gap: 10px;
+
+  }
+  }
+  
+
+  
+  @media screen and (max-width: 700px) {
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 10px;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    .column-headers{
+      font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    }
+    .bold-head{
+      /* margin-left: -10px; */
+      margin-right: 10px;
+    }
+    img{
+      display: none;
+    }
+    .employee-info{
+      /* padding-left:30px ; */
+      margin-left: -30px;
+      margin-top: -20px;
+      font-size: 10px;
+    }
+    .result{
+      width: 70%;
+      height: 40px;
+      margin-left: 10px;
+      padding-right: 20px;
+    }
+    .checkbox-inline{
+      display: grid;
+      grid-template-columns: 2fr .5fr 2fr ;
+      font-size: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+     gap: 10px;
+  
+    }
+    h4{
+      font-size: 12px;
+    }
+  }
